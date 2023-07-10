@@ -70,23 +70,30 @@ class HorseTest {
     }
 
     @Test
-    void getName() {
+    void getNameTest() {
         String name = "kek";
         horse = new Horse(name, 5);
         assertEquals(name, horse.getName());
     }
-//Проверить, что метод возвращает число, которое было передано вторым параметром в конструктор;
     @Test
-    void getSpeed() {
-        horse =
+    void getSpeedTest() {
+        int speed = 5;
+        horse = new Horse("kek", speed);
+        assertEquals(speed, horse.getSpeed());
     }
 
     @Test
-    void getDistance() {
+    void getDistanceTest() {
+        int distance = 78;
+        horse = new Horse("kek", 5, distance);
+        assertEquals(78, horse.getDistance());
+        horse = new Horse("kek", 17);
+        assertEquals(0, horse.getDistance());
     }
 
     @Test
     void move() {
+
     }
 }
 
