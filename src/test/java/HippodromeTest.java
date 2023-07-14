@@ -75,8 +75,8 @@ class HippodromeTest {
     void getWinner() {
         List<Horse> testHorses = new ArrayList<>();
         Horse kek = new Horse("kek", 5, 7);
-        testHorses.add(kek);
         Horse lol = new Horse("kek", 5, 9);
+        testHorses.add(kek);
         testHorses.add(lol);
         Hippodrome hippodromeTest = new Hippodrome(testHorses);
         assertEquals(lol, hippodromeTest.getWinner());
